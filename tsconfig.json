@@ -11,10 +11,18 @@
     "resolveJsonModule": true,
     "baseUrl": ".",
     "paths": {
-      "@": ["resources/js/Pages"]
+      "@/*": [
+        "resources/js/*"
+      ],
     },
-    "types": ["node"]
+    "types": [
+      "node"
+    ]
   },
-  "include": ["resources/js/**/*"],
-  "exclude": ["resources/js/*.js"]
+  "include": [
+    "resources/js/**/*"
+  ],
+  "exclude": [
+    "resources/js/*.js"
+  ]
 }

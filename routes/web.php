@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::middleware(['auth'])->get('/', function () {
-    return Inertia::render('app');
+    return Inertia::render('App');
 
 })->name('/');
 
