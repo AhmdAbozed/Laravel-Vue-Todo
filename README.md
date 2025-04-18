@@ -56,7 +56,7 @@
 
 Whatsapp: 01228473230<br>
 Linkedin: [linkedin.com/in/ahmed-hassan-abozed-6271b223a](https://www.linkedin.com/in/ahmed-hassan-abozed-6271b223a)<br>
-Project Link: [github.com/AhmdAbozed/chat-vue-laravel](https://github.com/AhmdAbozed/chat-vue-laravel)<br>
+Project Link: [github.com/AhmdAbozed/Laravel-Vue-Todo](https://github.com/AhmdAbozed/Laravel-Vue-Todo)<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
