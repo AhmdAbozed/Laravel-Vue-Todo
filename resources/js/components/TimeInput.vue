@@ -23,7 +23,6 @@ const hour = computed({
 const minute = computed({
   get: () => props.modelValue.minute,
   set: (val) => {
-    console.log('hewwo', val)
     emit('update:modelValue', {
       ...props.modelValue,
       minute: clamp(val, 0, 59)
@@ -40,8 +39,8 @@ const clamp = (val, min, max) => Math.min(max, Math.max(min, val));
       type="number"
       v-model.number="hour"
       class="w-12 text-center"
-      min="0"
-      max="23"
+      min="1"
+      max="23" 
     />
     <span class="text-xl">:</span>
     <input
@@ -49,7 +48,7 @@ const clamp = (val, min, max) => Math.min(max, Math.max(min, val));
       v-model.number="minute"
       class="w-12 text-center"
       min="0"
-      max="59"
+      max="59" 
     />
   </div>
 </template>

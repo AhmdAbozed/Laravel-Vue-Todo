@@ -10,9 +10,6 @@ const form = reactive({
 })
 async function submitForm(event: Event) {
     try {
-        console.log(event.currentTarget)
-        console.log(event.target)
-        console.log(location.protocol + "//" + location.host + "/")
         event.preventDefault();
         formProcessing.value = true;
         const target = event.target as any
@@ -58,7 +55,7 @@ async function submitForm(event: Event) {
         <div
             class="w-full bg-white animate-slideFadeIn rounded-lg shadow border border-gray-300 md:mt-0 sm:max-w-md xl:p-0 transition-transform">
             <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-                <h1 class="text-xl font-bold leading-tight tracking-tight text-yellow-300 md:text-2xl">
+                <h1 class="text-xl font-bold leading-tight tracking-tight text-purple-800 md:text-2xl">
                     Sign in to your account
                 </h1>
                 <form class="space-y-4 md:space-y-6" METHOD="post" @submit="submitForm">
@@ -66,20 +63,20 @@ async function submitForm(event: Event) {
                         <label for="email" class="block mb-2 text-sm    ">Username</label>
                         <input v-model="form.username" type="text" name="username" id="username" minlength="3"
                             required
-                            class="bg-white border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-yellow-300 focus:ring-1 outline-none focus:border-yellow-300 block w-full p-2.5"
+                            class="bg-white border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-purple-300 focus:ring-1 outline-none focus:border-purple-300 block w-full p-2.5"
                             placeholder="Username">
                     </div>
                     <div>
                         <label for="password" class="block mb-2 text-sm   ">Password</label>
                         <input v-model="form.password" type="password" name="password" id="password" minlength="5"
                             required placeholder="••••••••"
-                            class="bg-white border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-yellow-300 focus:ring-1 outline-none focus:border-yellow-300 block w-full p-2.5">
+                            class="bg-white border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-purple-300 focus:ring-1 outline-none focus:border-purple-300 block w-full p-2.5">
                     </div>
                     <div class="flex items-center justify-between">
                         <div class="flex items-start">
                             <div class="flex items-center h-5">
                                 <input id="remember" aria-describedby="remember" type="checkbox"
-                                    class="w-4 h-4 border border-gray-300 rounded bg-white focus:ring-3 focus:ring-yellow-300">
+                                    class="w-4 h-4 border border-gray-300 rounded bg-white focus:ring-3 focus:ring-purple-300">
                             </div>
                             <div class="ml-3 text-sm">
                                 <label for="remember" class="">Remember me</label>
@@ -88,7 +85,7 @@ async function submitForm(event: Event) {
                     </div>
 
                     <button type="submit"
-                        class="w-full text-white disabled:opacity-50 font-semibold text-md bg-yellow-300 hover:bg-yellow-400 focus:ring-4 focus:outline-none focus:ring-yellow-300 rounded-lg  px-5 py-2.5 text-center"
+                        class="w-full text-white disabled:opacity-50 font-semibold text-md bg-purple-500 hover:bg-purple-600 focus:ring-4 focus:outline-none focus:ring-purple-700 rounded-lg  px-5 py-2.5 text-center"
                         :disabled="formProcessing">Sign In</button>
 
                     <div class="flex justify-center text-sm text-red-600">
@@ -96,7 +93,7 @@ async function submitForm(event: Event) {
                     </div>
                     <p class="text-sm font-light text-gray-500">
                         Don’t have an account yet?
-                        <Link href="/register" class="font-medium text-yellow-500 hover:underline">
+                        <Link href="/register" class="font-medium text-purple-500 hover:underline">
                             Sign up
                         </Link>
                     </p>
